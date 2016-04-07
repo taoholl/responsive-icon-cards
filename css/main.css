@@ -17,42 +17,50 @@ html {
 	box-sizing: inherit;
 }
 
-img {
-  display: inline-block;
+ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+.card-img img{
+  display: block;
+  margin: 0 auto;
   width: 50px;
 }
 
-.card-img {
-  text-align: center;
-}
-
 h2 {
-  margin: 0;
-  padding: 0;
+  margin-bottom: 0;
   font-weight: normal;
 }
 
+p {
+  margin-top: 0;
+}
 @media only screen and (min-width: 25em) {
 
   html {
     font-size: 110%;
     line-height: 1.4;
   }
-.card-img img{
+
+.card-img {
   text-align: center;
-  padding: 3px;
+  padding: 10px;
+  display: inline-block;
+  top: 10px
 }
+img{
+  text-align: left;
+}
+.card-body h2 {
+   margin-top: 0;
 
-.card-body h2{
-  padding-right: 30px;
 }
-h2 {
-  padding-left: 3rem;
-}
+.card-body {
+  padding-right: 15px;
+  display: inline-block;
+  max-width: calc(100% - 50px - 1.5rem);
 
-img {
-  float: left;
-  max-width: none;
 }
 
 }
@@ -61,14 +69,33 @@ img {
     font-size: 120%;
     line-height: 1.5;
   }
-  .card-img img{
+  .card-img {
   text-align: center;
   padding: 3px;
+  display: block;
   }
 
-.card-body h2{
+.card-body {
   text-align: left;
+  max-width: none;
+  padding-right: 10px;
+}
+
+.card {
+  display:inline-block;
+  width: 32%;
+}
+}
+@media only screen and (min-width: 60em) {
+.card-img img{
+  display:block;
+}
+
+html {
+  font-size: 130%;
 
 }
+}
+@media only screen and (min-width:90em;) {
 
 }
